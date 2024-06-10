@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <img class="bkg" id="bkg_b" src="/imgs/unnamed (1).jpg" alt="">
+    <div class="container">
+        <img class="forw" src="/imgs/unnamed (2)_p1.png" alt="">
+        <div id="botte" class="intern">
+            <img src="/imgs/unnamed (2)_barrelò.png" alt="">
+            <div class="button" onmouseover="chbot(1)" onmouseout="chbot(0)" onclick="full(bkg_b)">
+                <a href="/product">product</a>
+            </div>
+        </div>
+        <div id="fund" class="intern1">
+            <img src="/imgs/unnamed (2)_p1.jpg" alt="">
+            <div class="button1" onmouseover="ch(1)" onmouseout="ch(0)">
+                <a href="/product">our founder</a>
+            </div>
+        </div>
+    </div>
+    <h1>disclamer</h1>
+    <p>questa è solo una demo </p>
+    <p>di questa demo funziona solamente il link <a href="/product"> proditti</a></p>
+    <p>inoltre l'impaginazione corrente non è totalmente responsiva e funziona correttamente dalle dimensioni dello schermo 780x450 in su</p>
+</body>
+<script>
+    function chbot(color) {
+        document.getElementById('botte').style.opacity = (1 - color);
+    }
+    function full(id){
+        const va=document.getElementById(id)
+        va.classList.add("fulls")
+    }
+
+</script>
+
+</html>
