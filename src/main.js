@@ -9,7 +9,7 @@ app.use(express.static(public_Dir_path))
 
 
 app.get('/', function(req, res){
-    res.render("product");
+    res.render("index");
   })
   app.get('/product', function(req, res){
     res.render("product")
