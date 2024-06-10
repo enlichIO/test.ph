@@ -1,0 +1,110 @@
+*{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+ }
+ body{
+     background-color: wheat;
+ }
+ .container{
+     position: relative;
+     width: 100%;
+     height: auto;
+ }
+
+ .intern{
+     width: 100%;
+     position:absolute;
+     top: 0%;
+     right: 0%;
+ }
+ .intern .blank_space{
+     opacity: 1;
+ }
+ .forw{
+     z-index: 999;
+ }
+
+ img{
+     width: 100%;
+ }
+
+ .card{
+     opacity: 0;
+     z-index: 0;
+     position: absolute;
+     bottom: 48%;
+     left: 15.6%;
+     display: flex;
+     justify-content:center;
+     width: 24%;
+     height: 20%;
+     background-color: rgba(0, 0, 255, 0);
+     border-radius: 10px;
+     overflow: hidden;
+     margin:20px;
+   }
+
+   .img-overlay-container {
+     overflow: hidden;
+     position: relative;
+     width: 200%;
+   }
+   
+.image {
+     z-index: -999;
+     opacity: 1;
+     display: block;
+     height: 100%;
+     width: auto;
+     border-radius: 10px;
+     transition: .5s ease;
+     backface-visibility: hidden;
+     object-fit: cover;
+   }
+   
+.overlay {
+     transition: .5s ease;
+     opacity: 0;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     text-align: center;
+   }
+
+   
+.img-overlay-container:hover .image {
+     opacity: 0.3;
+     transform: scale(0.9);
+   }
+   
+.img-overlay-container:hover .overlay {
+     opacity: 1;
+   }
+   
+   .card-content{
+     margin-top: 10%;
+     padding: 2%;
+     font-size: 1vw;
+   }
+.text {
+     color: rgba(0, 0, 0, 0.925);
+     font-size: 1vw;
+     padding: 16px 32px;
+   }
+   .grape_button{
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     top: 40%;
+     left: 51%;
+     height: 12%;
+     width: 8%;
+     border-radius: 50%;
+   }
+   .grape_button p{
+     position: relative;
+   }

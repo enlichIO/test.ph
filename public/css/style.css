@@ -18,50 +18,66 @@ img{
     scale:25%;
     left: 5%;
     transition: all ease-in-out 0.5s;
-}
-.bkg .fulls{
-    position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 
 }
+.anim2{
+    animation-duration: 2s;
+    animation-name: opacize;
+}
+@keyframes opacize {
+    from{opacity: 1;}
+    to{opacity: 0;}
+    
+}
+.anim{
+    animation-duration: 2s;
+    animation-name: bott;
+}
+@keyframes bott{
+form {scale:25%; left:5%;} 
+to {scale:100% ; left:0%}
+
+}
+
+
 .intern{
     width: 100%;
     position:absolute;
     top: 0%;
     right: 0%;
     z-index: 999;
-
-
+}
+.intern1{
+width: 100%;
+height: 100%;
+background-color: black;
 }
 .intern1 img{
-    width: 54.3%;
+    width: 11.7%;
     position:absolute;
-    top: 0%;
-    left: 0%;
-    z-index: -997;
-
-
+    top: 30%;
+    left: 43%;
 }
 .button1{
-    width: auto;
-
+    width: 8%;
+    height: 8%;
+    font-size: 2vw;
+    text-align: center;
     position: absolute;
-    top: 51.5%;
-    left: 43.5%;
+    top: 45%;
+    left: 42%;
     padding: 20px;
-    transition: all ease-in-out 1s;
 }
+
 .button{
-    background-color: bisque;
-    width: auto;
     position: absolute;
     top: 51.5%;
-    left: 57.5%;
-    padding-top: 20px;
-    transition: all ease-in-out 1s;
+    left: 57%;
+    width: 8%;
+    height: 8%;
+    font-size: 2vw;
+    text-align: center;
+    transition: opacity ease-in-out 1s;
 }
 a{
     color: black;

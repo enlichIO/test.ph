@@ -1,20 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product_style.css">
 </head>
+
 <body>
-     <div class="container">
+    <div class="container">
         <img class="forw" src="/imgs/unnamed (1).png" alt="">
-        <div id="botte" class="intern">
-            <img src="/imgs/unnamed (1)_leaf.png" alt="">
-            <div class="grape_button" onmouseover="chbot(1)" onmouseout="chbot(0)" onclick="full(bkg_b)">
-                <a href="/product">product</a>
+        <div id="foglia" class="intern">
+            <img class="blank_space" src="/imgs/unnamed (1)_leaf.png" alt="">
+            <div class="grape_button" onmouseover="chbot(1)" onmouseout="chbot(0)" onclick="full()"> button
             </div>
         </div>
-     </div>
+        <div id="card" class="card">
+                <div class="img-overlay-container" onclick="pss()">
+                    <img src="/imgs/chardonnay-terlan.jpg" alt="vino" class="image" style="width:100%">
+                    <div class="overlay">
+                        <div class="text"><p class="text">chardonnay</p></div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2>vino</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A fugiat veritatis eligendi sequi
+                        molestias, voluptate praesentium quod neque iusto reprehenderit numquam delectus natus,
+                        quisquam vero cupiditate necessitatibus quis omnis facere.
+
+                    </p>
+                </div>
+            </div>
+        <div>
+            <h2>discalmer</h2>
+            <p>ci sono problemi con lo z-index, l'immagine dovrebbe risultare dietro lo sfondo</p>
+            <p>per un miglior effetto a livello professionale usare una maschera (permette di adattare testo e immagini al background con forme geometriche non regolari)</p>
+            <h2>idea</h2>
+            <div><p>l'idea e che ogni chicco possa essere selettrore per prodotti </p></div>
+        </div>
 </body>
+
+<script>
+    var c = 0;
+    function pss(){
+        window.alert("no functioning products yet")
+    }
+    function full(){
+        c = c === 0 ? 1 : 0;
+        document.getElementById('foglia').style.opacity = (1 -c* 0.75);
+        document.getElementById('card').style.opacity = c;
+    }
+    function chbot(t){
+        l=c === 0 ? t : 1
+        document.getElementById('foglia').style.opacity = (1 - l*0.75);
+        document.getElementById('card').style.opacity = l;
+        
+
+    }
+
+
+</script>
+
 </html>
