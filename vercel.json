@@ -1,0 +1,5 @@
+{
+     "versiom":2,
+     "builds":[{"src":"./src/main.js","use":"@vercel/node"}],
+     "routes":[{"src":"./src","desr":"/"}]
+}
