@@ -14,4 +14,4 @@ app.get('/', function(req, res){
   app.get('/product', function(req, res){
     res.render("product")
   })
-  app.listen(7000)
+  app.listen(3000)
