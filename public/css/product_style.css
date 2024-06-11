@@ -51,7 +51,11 @@
      position: relative;
      width: 200%;
    }
-   
+  .butt{
+    height: 100%;
+    width: auto;
+    border-radius: 2px;
+  }
 .image {
      z-index: -999;
      opacity: 1;
