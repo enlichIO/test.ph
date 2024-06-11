@@ -4,7 +4,7 @@ const path=require('path')
 const app = express();
 app.set('view engine','hbs');
 
-const public_Dir_path = path.join(__dirname,'../public')
+const public_Dir_path = path.join(__dirname,'./public')
 app.use(express.static(public_Dir_path))
 
 
